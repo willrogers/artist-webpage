@@ -53,6 +53,29 @@
       object-fit: contain;
     }
 
+    @media (max-width: 768px) {
+      body {
+        height: 100svh;
+        min-height: unset;
+        padding: 1.25rem 1rem;
+        justify-content: flex-start;
+      }
+      header { margin-bottom: 0.5rem; }
+      footer { margin-top: 0.5rem; }
+      .image-wrapper {
+        flex: 1;
+        min-height: 0;
+        width: 100%;
+        justify-content: center;
+      }
+      .image-wrapper img {
+        max-height: 100%;
+        max-width: 100%;
+        width: auto;
+        height: auto;
+      }
+    }
+
     footer {
       margin-top: 1.25rem;
       text-align: center;
